@@ -7,7 +7,6 @@
 </head>
 
 <body>
-  <p>この文章はHTMLで出力しています。</p>
   <p>
     <?php
      //変数を代入する
@@ -22,18 +21,11 @@
      $number_9 = 30;
      $number_10 = 60;
 
-     //合計点算出
-     echo $number_1 + $number_2 + $number_3 + $number_4 + $number_5 + $number_6 + $number_7 + $number_8 + $number_9 + $number_10;
-
-    //改行
-    echo '<br>';
-
     //平均点用の変数を代入
-
-    $ave = 80 + 60 + 55 + 40 + 100 + 25 + 80 + 95 + 30 + 60;
+    $sum = $number_1 + $number_2 + $number_3 + $number_4 + $number_5 + $number_6 + $number_7 + $number_8 + $number_9 + $number_10;
     
      //平均点算出
-     echo $ave /  10;
+     echo $sum /  10;
      ?>
   </p>
 </body>
