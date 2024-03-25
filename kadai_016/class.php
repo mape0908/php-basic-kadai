@@ -15,17 +15,17 @@
              private $name;
              private $price;
 
-             // メソッドを定義する
-            public function show_price(int $price) {
-              echo $this->price . '<br>';
-          }
-          
-
              //コンストラクタを作成
              public function __construct(string $name, int $price) {
-              $this->name = $name;
-              $this->price = $price;
-             }
+                $this->name = $name;
+                $this->price = $price;
+               }
+
+             // メソッドを定義する
+            public function show_price() {
+              echo $this->price . '<br>';
+          }
+             
          }  
  
          // インスタンス化する
@@ -44,17 +44,16 @@
           private $height;
           private $weight;
 
+           //コンストラクタを作成
+           public function __construct(string $name, int $height, int $weight) {
+            $this->name = $name;
+            $this->height = $height;
+            $this->weight = $weight;
+           }
+
           // メソッドを定義する
-          public function show_height(int $height) {
+          public function show_height() {
             echo $this->height . '<br>';
-          }
-
-
-          //コンストラクタを作成
-          public function __construct(string $name, int $height, int $weight) {
-           $this->name = $name;
-           $this->height = $height;
-           $this->weight = $weight;
           }
       }
 
@@ -68,10 +67,10 @@
       echo '<br>';
 
       //メソッドにアクセスして実行
-      $food->show_price(250);
+      $food->show_price();
 
       //メソッドにアクセスして実行
-      $animal->show_height(60);
+      $animal->show_height();
 
          ?>
      </p>
